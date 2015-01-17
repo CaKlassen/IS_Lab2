@@ -10,7 +10,8 @@ class Application extends CI_Controller {
     protected $data = array();      // parameters for view components
     protected $id;		  // identifier for our content
     protected $choices = array(// our menu navbar
-	'Home' => '/', 'Gallery' => '/gallery', 'About' => '/about'
+	'Home' => '/', 'Features' => '/features', 'News' => '/news',
+        'About' => '/about', 'Contact' => '/contact'
     );
 
     /**
@@ -21,7 +22,7 @@ class Application extends CI_Controller {
     {
 	parent::__construct();
 	$this->data = array();
-	$this->data['pagetitle'] = 'Sample Image Gallery';
+	$this->data['pagetitle'] = 'Wix Website Builder';
     }
 
     /**
